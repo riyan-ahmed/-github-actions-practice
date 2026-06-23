@@ -13,11 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     # this will clone the code into runner
     steps:
-      - name: Checkout/clone the code
+      - name: Checkout/Clone the code
         uses: actions/checkout@v7
 #this will install python linter
       - name: pip install runner
         run: pip install ruff
 
       - name: check files for linting
-        run: ruff check.
+        run: ruff check .
