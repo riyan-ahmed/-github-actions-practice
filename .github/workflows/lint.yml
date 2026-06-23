@@ -15,3 +15,6 @@ jobs:
     steps:
       - name: Checkout/clone the code
         uses: actions/checkout@v7
+
+      - name: pip install runner
+        run: pip install ruff
